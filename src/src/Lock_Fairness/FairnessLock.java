@@ -7,7 +7,7 @@ public class FairnessLock {
 
     private final Lock fairLock = new ReentrantLock(true);
 
-    public void accegssResource() {
+    public void accessResource() {
         fairLock.lock();
 
         try {
