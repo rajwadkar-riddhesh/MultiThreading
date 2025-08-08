@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class FairnessLock {
 
-    private final Lock fairLock = new ReentrantLock(true);
+    private final Lock fairLock = new ReentrantLock();
 
     public void accessResource() {
         fairLock.lock();
