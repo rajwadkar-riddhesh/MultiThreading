@@ -5,9 +5,9 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class FairnessLock {
 
-    private final Lock fairLock = new ReentrantLock();
+    private final Lock fairLock = new ReentrantLock(true);
 
-    public void accessResource() {
+    public void accegssResource() {
         fairLock.lock();
 
         try {
